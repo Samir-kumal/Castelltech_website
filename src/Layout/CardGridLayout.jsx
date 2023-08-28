@@ -40,7 +40,7 @@ export default function SimpleThreeColumns() {
     <Box p={4}>
       <SimpleGrid columns={{ base: 1, md: 3 }} spacing={10}>
         <Box    display="flex"  flexDirection="column" justifyContent="center" alignItems = "center">
-          <Image src={MarketAnaysis} alt="Market Analysis" boxSize="150px" />
+          <Image src={MarketAnaysis} alt="Market Analysis" height = "140px" />
           <br />
           <Heading
             color={"#DF7D5A"}
@@ -57,7 +57,7 @@ export default function SimpleThreeColumns() {
           </Text>
         </Box>
         <Box   display="flex"  flexDirection="column" justifyContent="center" alignItems = "center">
-          <Image src={LeadGeneration} alt="Lead Generation" boxSize="150px" />
+          <Image src={LeadGeneration} alt="Lead Generation"  height = "140px"  />
           <br />
 
           <Heading
@@ -78,7 +78,7 @@ export default function SimpleThreeColumns() {
           <Image
             src={SocialMediaMarketing}
             alt="Social Media Marketing"
-            boxSize="150px"
+            height = "140px" 
           />
           <br />
 

@@ -1,5 +1,5 @@
 'use client'
-import Illustration
+import Illustration from "../assets/illustration.svg"
 import {
   Container,
   SimpleGrid,
@@ -35,7 +35,7 @@ const Feature = ({ text, icon, iconBg }) => {
 
 export default function Features() {
   return (
-    <Container maxW={'7xl'} py={12}>
+    <Container maxW={'6xl'} pb={12} >
          <Stack py = {12} spacing={4} as={Container} maxW={'3xl'} textAlign={'center'}>
          <Heading
           fontSize={{ base: "2xl", sm: "4xl", lg: "2xl" }}
@@ -58,28 +58,13 @@ export default function Features() {
             rounded={'md'}
             alt={'feature image'}
             src={
-              'https://images.unsplash.com/photo-1554200876-56c2f25224fa?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80'
+                Illustration
             }
-            objectFit={'cover'}
+            // objectFit={'cover'}
           />
         </Flex>
         <Stack spacing={4}>
-          <Text
-            textTransform={'uppercase'}
-            color={'blue.400'}
-            fontWeight={600}
-            fontSize={'sm'}
-            bg={useColorModeValue('blue.50', 'blue.900')}
-            p={2}
-            alignSelf={'flex-start'}
-            rounded={'md'}>
-            Our Story
-          </Text>
-          <Heading>A digital Product design agency</Heading>
-          <Text color={'gray.500'} fontSize={'lg'}>
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
-            eirmod tempor invidunt ut labore
-          </Text>
+          
          <GridBox/>
         </Stack>
        

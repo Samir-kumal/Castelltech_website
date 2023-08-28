@@ -66,7 +66,7 @@ const Card = ({ heading, description, icon, href }) => {
 
 export default function Services() {
   return (
-    <Box p={4}>
+    <Box bg= {"#f7f4f7"} p={4} py={16}>
       <Stack spacing={4} as={Container} maxW={"3xl"} textAlign={"center"}>
         <Heading
           fontSize={{ base: "2xl", sm: "4xl", lg: "2xl" }}
