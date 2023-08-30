@@ -1,5 +1,5 @@
 'use client'
-import Illustration from "../assets/illustration.svg"
+import Illustration from "../assets/cover.svg"
 import {
   Container,
   SimpleGrid,

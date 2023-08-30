@@ -24,7 +24,7 @@ export default function Main() {
         spacing={{ base: 8, md: 10 }}
         py={{ base: 20, md: 28 }}
         direction={{ base: 'column', md: 'row' }}>
-        <Stack  position = "relative" flex={1} spacing={{ base: 5, md: 10 }}>
+        <Stack   flex={1} spacing={{ base: 5, md: 10 }}>
           <Heading
             lineHeight={1.1}
             fontWeight={600}
@@ -34,10 +34,10 @@ export default function Main() {
              Grow With Us
             </Text>
           </Heading>
-          <Text position = "absolute" top= "14"   as={'span'} color={'#0C0C30'} fontSize={{ base: '2xl', sm: '2xl', lg: '4xl' }} fontWeight = {600}>
+          <Text  transform="translateY(-30px)"      as={'span'} color={'#0C0C30'} fontSize={{ base: '2xl', sm: '2xl', lg: '4xl' }} fontWeight = {600}>
           Digital Marketing & Free Training
             </Text>
-            <br />
+       
           <Text color={'gray.500'}>
             Snippy is a rich coding snippets app that lets you create your own code
             snippets, categorize them, and even sync them in the cloud so you can use them
