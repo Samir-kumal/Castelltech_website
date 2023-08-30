@@ -22,52 +22,12 @@ import {
 import CardGridLayout from "../Layout/CardGridLayout";
 import ServicesCard from "../Layout/common/ServicesCard";
 
-// interface CardProps {
-//   heading: string
-//   description: string
-//   icon: ReactElement
-//   href: string
-// }
 
-const Card = ({ heading, description, icon, href }) => {
-  return (
-    <Box
-      maxW={{ base: "full", md: "275px" }}
-      w={"full"}
-      borderWidth="1px"
-      borderRadius="lg"
-      overflow="hidden"
-      p={5}
-    >
-      <Stack align={"start"} spacing={2}>
-        <Flex
-          w={16}
-          h={16}
-          align={"center"}
-          justify={"center"}
-          color={"white"}
-          rounded={"full"}
-          bg={useColorModeValue("gray.100", "gray.700")}
-        >
-          {icon}
-        </Flex>
-        <Box mt={2}>
-          <Heading size="md">{heading}</Heading>
-          <Text mt={1} fontSize={"sm"}>
-            {description}
-          </Text>
-        </Box>
-        <Button variant={"link"} colorScheme={"blue"} size={"sm"}>
-          Learn more
-        </Button>
-      </Stack>
-    </Box>
-  );
-};
 
 export default function Services() {
   return (
-    <Box bg= {"#EDF2F7"} p={4} py={16}>
+    <div id="services-section">
+      <Box bg= {"#EDF2F7"} p={4} py={16} id="services-section">
       <Stack spacing={4} as={Container} maxW={"3xl"} textAlign={"center"}>
         <Heading
           fontSize={{ base: "2xl", sm: "4xl", lg: "2xl" }}
@@ -83,8 +43,7 @@ export default function Services() {
           Provide Awesome Services Grow Your Business
         </Heading>
         <Text color={"gray.600"} fontSize={{ base: "sm", sm: "lg" }}>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
-          obcaecati ut cupiditate pariatur, dignissimos, placeat amet officiis.
+        "Unlock Your Business Potential with Our Full Suite of Marketing Services. We Offer Strategic Planning, Content Creation, SEO, PPC, Social Media Management, and More. Elevate Your Brand Today!"
         </Text>
       </Stack>
 
@@ -93,5 +52,6 @@ export default function Services() {
         <ServicesCard/>
       </Container>
     </Box>
+    </div>
   );
 }

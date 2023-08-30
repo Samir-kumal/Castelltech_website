@@ -15,10 +15,11 @@ import {
 //   IconProps,
 //   useColorModeValue,
 } from '@chakra-ui/react'
+import { handleClick, NavLink } from "./Header"
 
 export default function Main() {
   return (
-    <Container maxW={'7xl'}>
+    <Container maxW={'7xl'} id="home-section">
       <Stack
         align={'center'}
         spacing={{ base: 8, md: 10 }}
@@ -52,7 +53,9 @@ export default function Main() {
               colorScheme={'red'}
               bg={'red.400'}
               _hover={{ bg: 'red.500' }}>
-              Get started
+                <NavLink onClick= {()=>handleClick("Contact")} url = "#contact">
+                  Get Started
+                </NavLink>
             </Button>
             <Button
               rounded={'full'}
@@ -70,19 +73,10 @@ export default function Main() {
           align={'center'}
           position={'relative'}
           w={'full'}>
-          {/* <Blob
-            w={'150%'}
-            h={'150%'}
-            position={'absolute'}
-            top={'-20%'}
-            left={0}
-            zIndex={-1}
-            color={useColorModeValue('red.50', 'red.400')}
-          /> */}
+    
           <Box
             position={'relative'}
             height={'full'}
-            // boxShadow={'2xl'}
             width={'full'}
             overflow={'hidden'}>
            

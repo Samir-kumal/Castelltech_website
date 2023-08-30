@@ -20,8 +20,7 @@ const ServicesCard = () => {
           <br />
 
           <Text textAlign="center" color={"gray.600"}>
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-            nonumy eirmod tempor invidunt ut labore...
+          Discover actionable insights with our Market Analysis Services. We offer tailored market research, competitive analysis, and trend assessments.
           </Text>
         </Box>
         <Box   display="flex"  flexDirection="column" justifyContent="center" alignItems = "center">
@@ -38,8 +37,7 @@ const ServicesCard = () => {
           <br />
 
           <Text textAlign="center" color={"gray.600"}>
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-            nonumy eirmod tempor invidunt ut labore...
+          Fuel your sales pipeline with high-quality leads and accelerate business growth. Explore our lead generation services for sustainable success.
           </Text>
         </Box>
         <Box   display="flex"  flexDirection="column" justifyContent="center" alignItems = "center">
@@ -60,8 +58,7 @@ const ServicesCard = () => {
           <br />
 
           <Text textAlign="center" color={"gray.600"}>
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-            nonumy eirmod tempor invidunt ut labore...
+          Elevate your brand's online presence with our Social Media Marketing expertise. Our tailored strategies harness the power of social platforms to engage your audience, boost brand awareness, and drive conversions.
           </Text>
         </Box>
     </CardGridLayout>
