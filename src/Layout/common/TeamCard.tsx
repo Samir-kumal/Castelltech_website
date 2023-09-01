@@ -1,63 +1,59 @@
 "use client";
 
-import { Flex, Circle, Box, Image, useColorModeValue, Heading, Stack } from "@chakra-ui/react";
+import {
+  Flex,
+  Circle,
+  Box,
+  Image,
+  useColorModeValue,
+  Heading,
+  Stack,
+} from "@chakra-ui/react";
 import CardGridLayout from "../CardGridLayout";
 
 const data = [
   {
-    isNew: true,
     imageURL:
-      "https://img.playbook.com/mM14qw5WMnX6U48zrCvlu-1d8T37tp3e3QmzE5DQU4o/Z3M6Ly9wbGF5Ym9v/ay1hc3NldHMtcHVi/bGljLzIxOGVkZDI2/LTNiNjMtNGYwZS05/YjZmLWY2ZmY0ZjQx/NGFhZg",
+      "https://img.playbook.com/MKrXF5aKp-8Qm3DlEQY6C0NbkTzi6B2T5rO7dodyk6U/Z3M6Ly9wbGF5Ym9v/ay1hc3NldHMtcHVi/bGljLzc5Yzg2Mjll/LTI1NDUtNDY1Mi1i/NzA4LTZlNTcxYWQw/ODRlMQ",
     name: "Bishal Pokhrael",
     role: "Founder / Chairman",
-    rating: 4.2,
-    numReviews: 34,
+ 
   },
   {
-    isNew: true,
     imageURL:
-      "https://img.playbook.com/0jcAlMWmLAYO2tqXETvv975omK48i6r74iS2D9P-_V8/Z3M6Ly9wbGF5Ym9v/ay1hc3NldHMtcHVi/bGljLzBjZDY0MzM0/LTQ3MDAtNDM3ZC05/ZjUzLTJmZTUyNDM0/ZWQ3MA",
+      "https://img.playbook.com/geX7inrpX8bcq9q2eP0IPe9dn61_f4yNmsQj_ZF0JkI/Z3M6Ly9wbGF5Ym9v/ay1hc3NldHMtcHVi/bGljLzRlMTNhMTQ4/LTgyZjEtNGMwYS05/OTVmLTFhNjI4YTQ0/ODk3ZA",
     name: "Samaya Paudel",
     role: "Co-Founder / Vice-Chairman",
-    rating: 4.2,
-    numReviews: 34,
+   
   },
   {
-    isNew: true,
     imageURL:
-      "https://img.playbook.com/fnYQ_jBI8wyny1s9Gp1vV0PF5xvCHjLpjMi7tKhpjzE/Z3M6Ly9wbGF5Ym9v/ay1hc3NldHMtcHVi/bGljL2FiZGE1ZTZj/LWVjMjctNGNkZS05/NTZjLWFiZjI3MjVl/MzcyNQ",
+      "https://img.playbook.com/4OF-695_Sn2yyZLV86gR1XlNBkbgt9GDSurt2mcBYAk/Z3M6Ly9wbGF5Ym9v/ay1hc3NldHMtcHVi/bGljLzM1N2EzYmRj/LTM5NDQtNDk3OC05/YzE0LTk1NWExZTFm/MTFmYg",
     name: "Swornim Shrestha",
-    role:"Managing Director",
-    rating: 4.2,
-    numReviews: 34,
+    role: "Managing Director",
+
   },
   {
-    isNew: true,
     imageURL:
-      "https://img.playbook.com/NXhDPwdvsAi7U1skYcBUmoy9nDDObs9sce8WCjp4ROE/Z3M6Ly9wbGF5Ym9v/ay1hc3NldHMtcHVi/bGljLzJiMTNkMGNl/LWM2Y2ItNGVlNy04/MmU3LTc3MmU1NDJm/OTYwYg",
+      "https://img.playbook.com/vQqCGYym8YGADPYr_rIOBvNud-iw59qY6_ieep8Lv2k/Z3M6Ly9wbGF5Ym9v/ay1hc3NldHMtcHVi/bGljLzE5MGVkNzc0/LTlkZDAtNDY4MC1h/ZTgzLTI5ZDA5NmEx/YTZkYQ",
     name: "Samir Kumal",
     role: "Developer / Designer",
-    rating: 4.2,
-    numReviews: 34,
   },
   {
-    isNew: true,
     imageURL:
       "https://img.playbook.com/HDrrKh90wzabcTY6W6QukvWJry5SKkemo-yknjeSPeo/Z3M6Ly9wbGF5Ym9v/ay1hc3NldHMtcHVi/bGljLzY5ZDQxYWY0/LTE5YmYtNDQwYS1i/Yzk1LWU5ZjZmMGRh/NTk1Ng",
     name: "Sabin Dhakal",
     role: "Back-end Developer",
-    rating: 4.2,
-    numReviews: 34,
-  }
-
+  },
 ];
 
 function TeamCard() {
-  const columnNo: number = 3;
+  const columnNo: number = 2;
   return (
-    <CardGridLayout column={columnNo}  >
+    <CardGridLayout column={columnNo}>
       {data.map((data) => (
         <Box
+        key={data.imageURL}
           bg={useColorModeValue("white", "gray.800")}
           maxW="sm"
           borderWidth="1px"
@@ -73,20 +69,15 @@ function TeamCard() {
 
           <Box p="6">
             <Flex mt="1" justifyContent="space-between" alignContent="center">
-              <Box
-              >
+              <Box>
                 <Stack>
- <Heading  fontSize="2xl"
-                fontWeight="bold">
-                {data.name}
-                </Heading>
-                <Heading color={"gray.500"} fontSize="md"
-                fontWeight="normal">
-                  {data.role}
-                </Heading>
+                  <Heading fontSize="2xl" fontWeight="bold">
+                    {data.name}
+                  </Heading>
+                  <Heading color={"gray.500"} fontSize="md" fontWeight="normal">
+                    {data.role}
+                  </Heading>
                 </Stack>
-               
-                
               </Box>
             </Flex>
           </Box>

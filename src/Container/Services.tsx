@@ -1,25 +1,23 @@
-"use client";
 
 import {
   Box,
-  Button,
+  // Button,
   Container,
-  Flex,
+  // Flex,
   Heading,
-  Icon,
+  // Icon,
   Stack,
   Text,
-  useColorModeValue,
+  // useColorModeValue,
 } from "@chakra-ui/react";
 // import { ReactElement } from 'react'
-import {
-  FcAbout,
-  FcAssistant,
-  FcCollaboration,
-  FcDonate,
-  FcManager,
-} from "react-icons/fc";
-import CardGridLayout from "../Layout/CardGridLayout";
+// import {
+//   FcAbout,
+//   FcAssistant,
+//   FcCollaboration,
+//   FcDonate,
+//   FcManager,
+// } from "react-icons/fc";
 import ServicesCard from "../Layout/common/ServicesCard";
 
 

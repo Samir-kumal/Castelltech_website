@@ -7,6 +7,7 @@ import Testimonials from './Container/Testimonials'
 import Team from './Container/Team'
 import Features from './Container/Features'
 import ContactUS from "./Container/ContactUS"
+import Contact from "./Container/Contact"
 
 const App = () => {
   return (
@@ -17,7 +18,9 @@ const App = () => {
       <Features/>
       <Team/>
       <Testimonials/>
-      <ContactUS/>
+      {/* <ContactUS/> */}
+      <Contact/>
+
       <Footer/>
     </>
   )

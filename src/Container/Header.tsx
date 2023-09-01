@@ -1,5 +1,5 @@
-  "use client";
   import { FaArrowRight } from "react-icons/fa";
+import {CSSObject} from "@emotion/react"
   import {
     Box,
     Flex,
@@ -28,7 +28,7 @@
     { text: "Testimonials", url: "#testimonials" },
     { text: "Teams", url: "#teams" },
   ];
- export const handleClick = (anchor) => {
+ export const handleClick = (anchor:string) => {
     // e.preventDefault();
     console.log(anchor);
     const id = `${anchor}-section`.toLowerCase();
@@ -41,9 +41,16 @@
     }
   };
 
- export const NavLink = (props) => {
+  interface NavLinkProps {
+    children: React.ReactNode;
+    url: string;
+    onClick?: () => void;
+  }
+  
+
+ export const NavLink = (props: NavLinkProps): JSX.Element => {
     const { children, url, onClick } = props;
-    const hoverStyles = url === "#contact"
+    const hoverStyles: CSSObject = url === "#contact"
     ? {
         textDecoration: "none",
         // bg: useColorModeValue("gray.200", "gray.700"),
@@ -133,7 +140,7 @@
             <Box pb={4} display={{ md: "none" }}>
               <Stack as={"nav"} spacing={4}>
                 {Links.map((link) => (
-                  <NavLink key={link}>{link}</NavLink>
+                  <NavLink key={link.url} url={link.url}>{link.text}</NavLink>
                 ))}
               </Stack>
             </Box>

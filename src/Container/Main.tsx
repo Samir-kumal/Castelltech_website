@@ -1,4 +1,3 @@
-'use client'
 import Background from "../assets/background.svg"
 import {
   Container,
@@ -10,8 +9,8 @@ import {
   Button,
   Image,
 //   Icon,
-  IconButton,
-  createIcon,
+  // IconButton,
+  // createIcon,
 //   IconProps,
 //   useColorModeValue,
 } from '@chakra-ui/react'

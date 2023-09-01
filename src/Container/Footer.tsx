@@ -1,5 +1,5 @@
 'use client'
-
+import {ReactNode} from "react"
 import {
   Box,
   chakra,
@@ -23,7 +23,11 @@ const SocialButton = ({
   children,
   label,
   href,
-}) => {
+}:{
+children: ReactNode
+label: string
+href: string}
+) => {
   return (
     <chakra.button
       bg={useColorModeValue('blackAlpha.100', 'whiteAlpha.100')}
@@ -46,7 +50,7 @@ const SocialButton = ({
   )
 }
 
-const ListHeader = ({ children }) => {
+const ListHeader = ({ children } : {children : ReactNode}) => {
   return (
     <Text fontWeight={'500'} fontSize={'lg'} mb={2}>
       {children}
@@ -65,7 +69,7 @@ export default function Footer() {
           spacing={8}>
           <Stack spacing={6}>
             <Box>
-              <LOGO color={useColorModeValue('gray.700', 'white')} />
+              <LOGO/>
             </Box>
             <Text fontSize={'sm'}>© 2023 Castelltech Pvt Ltd. All rights reserved</Text>
             <Stack direction={'row'} spacing={6}>
