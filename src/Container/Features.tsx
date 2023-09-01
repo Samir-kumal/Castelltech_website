@@ -1,4 +1,3 @@
-'use client'
 import Illustration from "../assets/cover.svg"
 import {
   Container,
@@ -8,11 +7,11 @@ import {
   Heading,
   Text,
   Stack,
-  StackDivider,
-  Icon,
-  useColorModeValue,
+  // StackDivider,
+  // Icon,
+  // useColorModeValue,
 } from '@chakra-ui/react'
-import { IoAnalyticsSharp, IoLogoBitcoin, IoSearchSharp } from 'react-icons/io5'
+// import { IoAnalyticsSharp, IoLogoBitcoin, IoSearchSharp } from 'react-icons/io5'
 import GridBox from './GridBox'
 // import { ReactElement } from 'react'
 

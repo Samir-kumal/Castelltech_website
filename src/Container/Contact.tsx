@@ -1,4 +1,3 @@
-"use client";
 import { useFormik } from "formik";
 import * as Yup from "yup";
 import useSubmit from "../hooks/useSubmit";

@@ -1,20 +1,19 @@
-'use client'
 
 import {
-  Flex,
-  Circle,
-  Image,
-  Badge,
-  useColorModeValue,
-  Icon,
-  chakra,
-  Tooltip,
+  // Flex,
+  // Circle,
+  // Image,
+  // Badge,
+  // useColorModeValue,
+  // Icon,
+  // chakra,
+  // Tooltip,
   Stack,
   Box,
   Container,
   Heading,
   Text,
-  SimpleGrid
+  // SimpleGrid
 } from '@chakra-ui/react'
 
 import TeamCard from '../Layout/common/TeamCard'
