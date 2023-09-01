@@ -14,7 +14,7 @@ const data = [
   {
     imageURL:
       "https://img.playbook.com/AqRo2-aP1yaYPK9KLDBJFU8wfecd9_RCsYC_5SoqbyY/Z3M6Ly9wbGF5Ym9v/ay1hc3NldHMtcHVi/bGljLzM5NjgyMDA0/LTM5MTYtNDIwNy1i/YzMzLWE5YzdiN2Q1/MmVkMA",
-    name: "Bishal Pokhrael",
+    name: "Bishal Pokharel",
     role: "Founder / Chairman",
  
   },
@@ -47,7 +47,7 @@ const data = [
 ];
 
 function TeamCard() {
-  const columnNo: number = 3;
+  const columnNo: number = 2;
   return (
     <CardGridLayout column={columnNo}>
       {data.map((data) => (
@@ -60,6 +60,7 @@ function TeamCard() {
           rounded="lg"
           shadow="lg"
           position="relative"
+          
         >
           <Image
             src={data.imageURL}
