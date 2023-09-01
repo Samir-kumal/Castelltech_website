@@ -13,28 +13,28 @@ import CardGridLayout from "../CardGridLayout";
 const data = [
   {
     imageURL:
-      "https://img.playbook.com/MKrXF5aKp-8Qm3DlEQY6C0NbkTzi6B2T5rO7dodyk6U/Z3M6Ly9wbGF5Ym9v/ay1hc3NldHMtcHVi/bGljLzc5Yzg2Mjll/LTI1NDUtNDY1Mi1i/NzA4LTZlNTcxYWQw/ODRlMQ",
+      "https://img.playbook.com/AqRo2-aP1yaYPK9KLDBJFU8wfecd9_RCsYC_5SoqbyY/Z3M6Ly9wbGF5Ym9v/ay1hc3NldHMtcHVi/bGljLzM5NjgyMDA0/LTM5MTYtNDIwNy1i/YzMzLWE5YzdiN2Q1/MmVkMA",
     name: "Bishal Pokhrael",
     role: "Founder / Chairman",
  
   },
   {
     imageURL:
-      "https://img.playbook.com/geX7inrpX8bcq9q2eP0IPe9dn61_f4yNmsQj_ZF0JkI/Z3M6Ly9wbGF5Ym9v/ay1hc3NldHMtcHVi/bGljLzRlMTNhMTQ4/LTgyZjEtNGMwYS05/OTVmLTFhNjI4YTQ0/ODk3ZA",
+      "https://img.playbook.com/HxZP7L4eUBMWiVDIkAQ07ODvkj7y7zKTZgUwdOYWvig/Z3M6Ly9wbGF5Ym9v/ay1hc3NldHMtcHVi/bGljLzZhMWQ5NWM1/LThkZjUtNDMxMi04/MWJiLTc4MjZiYjE1/YzI1ZQ",
     name: "Samaya Paudel",
     role: "Co-Founder / Vice-Chairman",
    
   },
   {
     imageURL:
-      "https://img.playbook.com/4OF-695_Sn2yyZLV86gR1XlNBkbgt9GDSurt2mcBYAk/Z3M6Ly9wbGF5Ym9v/ay1hc3NldHMtcHVi/bGljLzM1N2EzYmRj/LTM5NDQtNDk3OC05/YzE0LTk1NWExZTFm/MTFmYg",
+      "https://img.playbook.com/ysPv9u5_zTdmvzOShkP4mFcvdTcNKBBQxhnoy6y2abw/Z3M6Ly9wbGF5Ym9v/ay1hc3NldHMtcHVi/bGljL2JjZDM5ODM4/LWYwN2YtNGU0Zi05/YzZlLTg5NDgyNjMw/ZmY5Yw",
     name: "Swornim Shrestha",
     role: "Managing Director",
 
   },
   {
     imageURL:
-      "https://img.playbook.com/vQqCGYym8YGADPYr_rIOBvNud-iw59qY6_ieep8Lv2k/Z3M6Ly9wbGF5Ym9v/ay1hc3NldHMtcHVi/bGljLzE5MGVkNzc0/LTlkZDAtNDY4MC1h/ZTgzLTI5ZDA5NmEx/YTZkYQ",
+      "https://img.playbook.com/ORtpxobJOVHZBIDe-q9pk_nM7p73dGJkAi3qsWn9vmw/Z3M6Ly9wbGF5Ym9v/ay1hc3NldHMtcHVi/bGljL2RhMzJjOGZj/LThmM2ItNDJhNy1i/YmE2LTk2ZGRlNGM2/MGRlZg",
     name: "Samir Kumal",
     role: "Developer / Designer",
   },
