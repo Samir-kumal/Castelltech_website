@@ -47,7 +47,7 @@ const data = [
 ];
 
 function TeamCard() {
-  const columnNo: number = 2;
+  const columnNo: number = 3;
   return (
     <CardGridLayout column={columnNo}>
       {data.map((data) => (
