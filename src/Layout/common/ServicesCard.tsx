@@ -58,7 +58,7 @@ const ServicesCard = () => {
           <br />
 
           <Text textAlign="center" color={"gray.600"}>
-          Elevate your brand's online presence with our Social Media Marketing expertise. Our tailored strategies harness the power of social platforms to engage your audience, boost brand awareness, and drive conversions.
+          Elevate your brand's online presence with our Social Media Marketing expertise, utilizing tailored strategies to engage your audience, boost brand awareness.
           </Text>
         </Box>
     </CardGridLayout>

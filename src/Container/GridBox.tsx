@@ -39,8 +39,7 @@ export default function GridBox() {
           <br />
 
           <Text textAlign="center" color={"gray.600"}>
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-            nonumy eirmod tempor invidunt ut labore...
+          Unlock the power of digital marketing with our engaging infographics, helping you boost online visibility, reach your ideal audience, and grow your brand.
           </Text>
         </Box>
         <Box
@@ -62,8 +61,7 @@ export default function GridBox() {
           <br />
 
           <Text textAlign="center" color={"gray.600"}>
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-            nonumy eirmod tempor invidunt ut labore...
+          Our visually appealing content simplifies the complexities of Onsite SEO, empowering you to enhance your website's visibility and attract more visitors.
           </Text>
         </Box>
         <Box
@@ -87,8 +85,7 @@ export default function GridBox() {
           <br />
 
           <Text textAlign="center" color={"gray.600"}>
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-            nonumy eirmod tempor invidunt ut labore...
+          Our visually stunning content showcases the power of design in various aspects of life, from branding to user experience. 
           </Text>
         </Box>
         <Box
@@ -112,8 +109,7 @@ export default function GridBox() {
           <br />
 
           <Text textAlign="center" color={"gray.600"}>
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-            nonumy eirmod tempor invidunt ut labore...
+          Learn to harness social platforms' potential for audience connection, brand loyalty, and engagement. 
           </Text>
         </Box>
       </SimpleGrid>

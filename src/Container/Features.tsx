@@ -37,8 +37,7 @@ export default function Features() {
         How Can We Help?
                 </Heading>
         <Text color={'gray.600'} fontSize={{ base: 'sm', sm: 'lg' }}>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis obcaecati ut
-          cupiditate pariatur, dignissimos, placeat amet officiis.
+        We're here to empower your business with our digital marketing expertise, enabling you to reach the right audience at the right time, increase brand recognition, and achieve your marketing goals.
         </Text>
       </Stack>
       <SimpleGrid columns={{ base: 1, md: 2 }} spacing={10}>

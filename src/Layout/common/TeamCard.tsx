@@ -52,6 +52,7 @@ function TeamCard() {
     <CardGridLayout column={columnNo}>
       {data.map((data) => (
         <Box
+        
         key={data.imageURL}
           bg={useColorModeValue("white", "gray.800")}
           maxW="sm"
