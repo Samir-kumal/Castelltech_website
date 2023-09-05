@@ -33,9 +33,9 @@ export default function Features() {
         >
           Why Choose US?
         </Heading>
-        <Heading fontSize={{ base: '2xl', sm: '4xl' }} fontWeight={'bold'}>
+        {/* <Heading fontSize={{ base: '2xl', sm: '4xl' }} fontWeight={'bold'}>
         How Can We Help?
-                </Heading>
+                </Heading> */}
         <Text color={'gray.600'} fontSize={{ base: 'sm', sm: 'lg' }}>
         We're here to empower your business with our digital marketing expertise, enabling you to reach the right audience at the right time, increase brand recognition, and achieve your marketing goals.
         </Text>
