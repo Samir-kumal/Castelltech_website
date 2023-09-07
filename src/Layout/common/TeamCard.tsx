@@ -49,7 +49,7 @@ const data = [
 ];
 
 function TeamCard() {
-  const columnNo: number = 2;
+  const columnNo: number =3;
   return (
     <CardGridLayout column={columnNo}>
       {data.map((data) => (
@@ -68,7 +68,7 @@ function TeamCard() {
             roundedTop="lg"
           />
 
-          <Box p="6">
+          <Box p="2">
             <Flex mt="1" justifyContent="space-between" alignContent="center">
               <Box>
                 <Stack>
