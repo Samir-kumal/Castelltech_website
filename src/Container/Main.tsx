@@ -1,4 +1,4 @@
-import Background from "../assets/background.svg"
+import Background from "../assets/background.svg";
 import {
   Container,
   Stack,
@@ -8,42 +8,51 @@ import {
   Text,
   Button,
   Image,
-//   Icon,
+  HStack,
+  Icon,
+  //   Icon,
   // IconButton,
   // createIcon,
-//   IconProps,
-//   useColorModeValue,
-} from '@chakra-ui/react'
-import { handleClick, NavLink } from "./Header"
-
+  //   IconProps,
+  //   useColorModeValue,
+} from "@chakra-ui/react";
+import { handleClick, NavLink } from "./Header";
+import { FaArrowRight } from "react-icons/fa";
 export default function Main() {
   return (
-    <Container maxW={'7xl'} id="home-section">
+    <Container maxW={"7xl"} id="home-section">
       <Stack
-        align={'center'}
+        align={"center"}
         spacing={{ base: 8, md: 10 }}
         py={{ base: 20, md: 28 }}
-        direction={{ base: 'column', md: 'row' }}>
-        <Stack   flex={1} spacing={{ base: 5, md: 10 }}>
+        direction={{ base: "column", md: "row" }}
+      >
+        <Stack flex={1} spacing={{ base: 5, md: 10 }}>
           <Heading
             lineHeight={1.1}
             fontWeight={600}
-            fontSize={{ base: '3xl', sm: '4xl', lg: '6xl' }}>
-           
-            <Text as={'span'} color={'#0C0C30'} fontWeight = {700}>
-             Grow With Us
+            fontSize={{ base: "3xl", sm: "4xl", lg: "6xl" }}
+          >
+            <Text as={"span"} color={"#0C0C30"} fontWeight={700}>
+              Grow With Us
             </Text>
           </Heading>
-          <Text  transform="translateY(-30px)"      as={'span'} color={'#0C0C30'} fontSize={{ base: '2xl', sm: '2xl', lg: '4xl' }} fontWeight = {600}>
-          Digital Marketing & Free Training
-            </Text>
-       
-          <Text color={'gray.500'}>
-            Snippy is a rich coding snippets app that lets you create your own code
-            snippets, categorize them, and even sync them in the cloud so you can use them
-            anywhere. All that is free!
+          <Text
+            transform="translateY(-30px)"
+            as={"span"}
+            color={"#0C0C30"}
+            fontSize={{ base: "2xl", sm: "2xl", lg: "4xl" }}
+            fontWeight={600}
+          >
+            Digital Marketing & Free Training
           </Text>
-          <Stack spacing={{ base: 4, sm: 6 }} direction={{ base: 'column', sm: 'row' }}>
+
+          <Text color={"gray.500"}>
+            Snippy is a rich coding snippets app that lets you create your own
+            code snippets, categorize them, and even sync them in the cloud so
+            you can use them anywhere. All that is free!
+          </Text>
+          {/* <Stack spacing={{ base: 4, sm: 6 }} direction={{ base: 'column', sm: 'row' }}>
             <Button
               rounded={'full'}
               size={'lg'}
@@ -64,38 +73,47 @@ export default function Main() {
             >
               How It Works
             </Button>
-          </Stack>
+          </Stack> */}
+          <NavLink onClick={() => handleClick("Contact")} url={"#contact"}>
+            <Button colorScheme={"blue"} width={"sm"} borderRadius={"md"}>
+              <Flex align="center">
+                <a href="#contact-section"></a>
+                Contact Us
+                {/* </NavLink> */}
+                <HStack spacing={6} align="center">
+                  <Icon as={FaArrowRight} boxSize={4} ml={2} />
+                </HStack>
+              </Flex>
+            </Button>
+          </NavLink>
         </Stack>
         <Flex
           flex={1}
-          justify={'center'}
-          align={'center'}
-          position={'relative'}
-          w={'full'}>
-    
+          justify={"center"}
+          align={"center"}
+          position={"relative"}
+          w={"full"}
+        >
           <Box
-            position={'relative'}
-            height={'full'}
-            width={'full'}
-            overflow={'hidden'}>
-           
+            position={"relative"}
+            height={"full"}
+            width={"full"}
+            overflow={"hidden"}
+          >
             <Image
-              alt={'Hero Image'}
-              fit={'cover'}
-              align={'center'}
-              w={'100%'}
-              h={'100%'}
-              src={
-                Background
-              }
+              alt={"Hero Image"}
+              fit={"cover"}
+              align={"center"}
+              w={"100%"}
+              h={"100%"}
+              src={Background}
             />
           </Box>
         </Flex>
       </Stack>
     </Container>
-  )
+  );
 }
-
 
 // const Blob = (props) => {
 //   return (

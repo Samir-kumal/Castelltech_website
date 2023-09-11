@@ -11,7 +11,7 @@ const ServicesCard = () => {
           <Image src={MarketAnaysis} alt="Market Analysis" height = "140px" />
           <br />
           <Heading
-            color={"#DF7D5A"}
+              color={"#1A202C"}
             fontWeight={"bold"}
             fontSize={{ base: "2xl", sm: "1xl", lg: "2xl" }}
           >
@@ -28,7 +28,7 @@ const ServicesCard = () => {
           <br />
 
           <Heading
-            color={"#DF7D5A"}
+            color={"#1A202C"}
             fontWeight={"bold"}
             fontSize={{ base: "2xl", sm: "1xl", lg: "2xl" }}
           >
@@ -49,11 +49,11 @@ const ServicesCard = () => {
           <br />
 
           <Heading as="h1" textAlign="center"
-            color={"#DF7D5A"}
+            color={"#1A202C"}
             fontWeight={"bold"}
             fontSize={{ base: "2xl", sm: "1xl", lg: "2xl" }}
           >
-            <Text fontWeight={600}>Social Media Marketing</Text>
+            <Text fontWeight={600}>Digital Marketing</Text>
           </Heading>
           <br />
 

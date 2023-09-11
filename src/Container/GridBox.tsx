@@ -30,7 +30,7 @@ export default function GridBox() {
           <Image src={Icon1} alt="Market Analysis" height="80px" />
           <br />
           <Heading
-            color={"#DF7D5A"}
+              color={"#1A202C"}
             fontWeight={"bold"}
             fontSize={{ base: "xl", sm: "lg", lg: "xl" }}
           >
@@ -52,7 +52,7 @@ export default function GridBox() {
           <br />
 
           <Heading
-            color={"#DF7D5A"}
+              color={"#1A202C"}
             fontWeight={"bold"}
             fontSize={{ base: "xl", sm: "lg", lg: "xl" }}
           >
@@ -76,7 +76,7 @@ export default function GridBox() {
           <Heading
             as="h1"
             textAlign="center"
-            color={"#DF7D5A"}
+            color={"#1A202C"}
             fontWeight={"bold"}
             fontSize={{ base: "xl", sm: "lg", lg: "xl" }}
           >
@@ -100,7 +100,7 @@ export default function GridBox() {
           <Heading
             as="h1"
             textAlign="center"
-            color={"#DF7D5A"}
+            color={"#1A202C"}
             fontWeight={"bold"}
             fontSize={{ base: "xl", sm: "lg", lg: "xl" }}
           >

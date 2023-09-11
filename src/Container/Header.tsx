@@ -1,4 +1,3 @@
-import { FaArrowRight } from "react-icons/fa";
 import { CSSObject } from "@emotion/react";
 import {
   Box,
@@ -99,21 +98,23 @@ export default function Header() {
 
           <Flex alignItems={"center"}>
             <HStack
+            fontWeight={"semibold"}
               as={"nav"}
-              spacing={6}
+              spacing={16}
               display={{ base: "none", md: "flex" }}
-              pr={{ base: 0, md: 10 }}
+              pr={{ base: 0, md: 20 }}
             >
               {Links.map((link) => (
                 <NavLink
                   key={link.text}
                   url={link.url}
+                  
                   onClick={() => handleClick(link.text)}
                 >
                   {link.text}
                 </NavLink>
               ))}
-              <Button colorScheme="blue">
+              {/* <Button colorScheme="blue">
                 <Flex align="center">
                   <a href="#contact-section"></a>
                   <NavLink
@@ -127,7 +128,7 @@ export default function Header() {
                     <Icon as={FaArrowRight} boxSize={4} ml={2} />
                   </HStack>
                 </Flex>
-              </Button>
+              </Button> */}
             </HStack>
             <IconButton
               size={"md"}

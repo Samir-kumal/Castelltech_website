@@ -72,12 +72,7 @@ export default function Footer() {
             </Box>
             <Text fontSize={'sm'}>© 2023 Castelltech Pvt Ltd. All rights reserved</Text>
             <Stack direction={'row'} spacing={6}>
-              <SocialButton label={'Twitter'} href={"https://www.x.com"}>
-                <FaTwitter />
-              </SocialButton>
-              <SocialButton label={'YouTube'}  href={"https://www.youtube.com"}>
-                <FaYoutube />
-              </SocialButton>
+             
               <SocialButton label={'Instagram'}  href={"https://www.instagram.com"}>
                 <FaInstagram />
               </SocialButton>

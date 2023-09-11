@@ -29,7 +29,7 @@ export default function Services() {
       <Stack spacing={4} as={Container} maxW={"3xl"} textAlign={"center"}>
         <Heading
           fontSize={{ base: "2xl", sm: "4xl", lg: "2xl" }}
-          color={"#DF7D5A"}
+          color={"#137DC5"}
           fontWeight={"bold"}
         >
           OUR SERVICES
