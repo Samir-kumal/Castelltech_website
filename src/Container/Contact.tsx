@@ -43,7 +43,6 @@ const CONFETTI_DARK = `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2
 export default function Contact() {
 //   const { isLoading, response, submit } = useSubmit();
 //   const { onOpen } = useAlertContext();
-  const { hasCopied, onCopy } = useClipboard("example@example.com");
   const formik = useFormik({
     initialValues: {
       name: "",
@@ -98,7 +97,7 @@ export default function Contact() {
               spacing={{ base: 4, md: 8, lg: 20 }}
               direction={{ base: "column", md: "row" }}
             >
-              <Stack
+              {/* <Stack
                 align="center"
                 justify="space-around"
                 direction={{ base: "row", md: "column" }}
@@ -165,7 +164,7 @@ export default function Contact() {
                     isRound
                   />
                 </Box>
-              </Stack>
+              </Stack> */}
 
               <Box
                 bg={useColorModeValue("white", "gray.700")}

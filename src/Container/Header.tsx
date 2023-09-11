@@ -19,7 +19,8 @@ import {
 } from "@chakra-ui/react";
 import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
 import LOGO from "../assets/ICONS/LOGO";
-
+import { FaArrowRight } from "react-icons/fa";
+import { FiMail } from 'react-icons/fi';
 const Links = [
   { text: "Home", url: "#home" },
   { text: "Services", url: "#services" },
@@ -85,7 +86,7 @@ export default function Header() {
         position={"fixed"}
         width={"full"}
         zIndex={"1"}
-        shadow={"base"}
+        // shadow={"base"}
       >
         <Flex h={16} alignItems={"center"} justifyContent={"space-between"}>
           <HStack spacing={8} alignItems={"center"} pl={{ base: 0, md: 6 }}>
@@ -100,9 +101,9 @@ export default function Header() {
             <HStack
             fontWeight={"semibold"}
               as={"nav"}
-              spacing={16}
+              spacing={8}
               display={{ base: "none", md: "flex" }}
-              pr={{ base: 0, md: 20 }}
+              pr={{ base: 0, md: 16 }}
             >
               {Links.map((link) => (
                 <NavLink
@@ -114,9 +115,12 @@ export default function Header() {
                   {link.text}
                 </NavLink>
               ))}
-              {/* <Button colorScheme="blue">
+              <Button colorScheme="blue" variant='outline' borderRadius={"3xl"}  >
                 <Flex align="center">
                   <a href="#contact-section"></a>
+                  <HStack spacing={6} align="center">
+                    <Icon as={FiMail} boxSize={4} ml={2} />
+                  </HStack>
                   <NavLink
                     onClick={() => handleClick("Contact")}
                     url={"#contact"}
@@ -124,11 +128,9 @@ export default function Header() {
                     Contact Us
                   </NavLink>
 
-                  <HStack spacing={6} align="center">
-                    <Icon as={FaArrowRight} boxSize={4} ml={2} />
-                  </HStack>
+                  
                 </Flex>
-              </Button> */}
+              </Button>
             </HStack>
             <IconButton
               size={"md"}

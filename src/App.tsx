@@ -6,8 +6,8 @@ import Footer from './Container/Footer'
 import Testimonials from './Container/Testimonials'
 import Team from './Container/Team'
 import Features from './Container/Features'
-import ContactUS from "./Container/ContactUS"
 import Contact from "./Container/Contact"
+import TechStack from "./Container/TechStack"
 
 const App = () => {
   return (
@@ -17,6 +17,8 @@ const App = () => {
       <Services/>
       <Features/>
       <Team/>
+      <TechStack/>
+
       <Testimonials/>
       {/* <ContactUS/> */}
       <Contact/>

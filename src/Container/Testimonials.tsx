@@ -148,10 +148,10 @@ export default function Testimonials() {
             </TestimonialContent>
             <TestimonialAvatar
               src={
-                'https://i.pinimg.com/736x/ab/b7/79/abb77900c96085270d6caa28742d1428--nepal-mens-fashion.jpg'
+                'https://img.playbook.com/klPfAox1-QjGEFUvqrRYXCwnrhm_5AD4NkaEDx2T-XY/Z3M6Ly9wbGF5Ym9v/ay1hc3NldHMtcHVi/bGljLzIyZDFkZjU5/LWE4ZDctNDBhMi1h/MTk1LWQ0MjczYWMz/ZWU4YQ'
               }
-              name={'Manik Shrestha'}
-              title={' Founder of StartSmart Ventures'}
+              name={'Sagar Lamsal'}
+              title={'Managing Director at Business Management Services Pvt.Ltd'}
             />
           </Testimonial>
         </Stack>

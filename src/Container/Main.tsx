@@ -18,6 +18,9 @@ import {
 } from "@chakra-ui/react";
 import { handleClick, NavLink } from "./Header";
 import { FaArrowRight } from "react-icons/fa";
+const gradient = "linear(to-r, blue.700, teal.500)";
+const hoverGradient = "linear(to-l, blue.700, teal.500)";
+
 export default function Main() {
   return (
     <Container maxW={"7xl"} id="home-section">
@@ -27,7 +30,7 @@ export default function Main() {
         py={{ base: 20, md: 28 }}
         direction={{ base: "column", md: "row" }}
       >
-        <Stack flex={1} spacing={{ base: 5, md: 10 }}>
+        <Stack flex={1} spacing={{ base: 5, md: 10 }} >
           <Heading
             lineHeight={1.1}
             fontWeight={600}
@@ -44,13 +47,11 @@ export default function Main() {
             fontSize={{ base: "2xl", sm: "2xl", lg: "4xl" }}
             fontWeight={600}
           >
-            Digital Marketing & Free Training
+          Elevating Nepal's IT Sector
           </Text>
 
-          <Text color={"gray.500"}>
-            Snippy is a rich coding snippets app that lets you create your own
-            code snippets, categorize them, and even sync them in the cloud so
-            you can use them anywhere. All that is free!
+          <Text color={"gray.500"} transform="translateY(-30px)" >
+          Join our innovation-driven IT revolution. We prioritize quality, global reach, sustainability, and customer satisfaction. Together, we're shaping a prosperous digital future for Nepal.
           </Text>
           {/* <Stack spacing={{ base: 4, sm: 6 }} direction={{ base: 'column', sm: 'row' }}>
             <Button
@@ -75,14 +76,12 @@ export default function Main() {
             </Button>
           </Stack> */}
           <NavLink onClick={() => handleClick("Contact")} url={"#contact"}>
-            <Button colorScheme={"blue"} width={"sm"} borderRadius={"md"}>
+            <Button colorScheme={"blue"} width={"60"}  borderRadius={"2xl"}   _hover={{ bgGradient: hoverGradient }}   bgGradient={gradient}>
               <Flex align="center">
                 <a href="#contact-section"></a>
-                Contact Us
+                Join Us
                 {/* </NavLink> */}
-                <HStack spacing={6} align="center">
-                  <Icon as={FaArrowRight} boxSize={4} ml={2} />
-                </HStack>
+               
               </Flex>
             </Button>
           </NavLink>

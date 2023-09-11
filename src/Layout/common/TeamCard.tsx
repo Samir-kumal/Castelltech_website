@@ -38,13 +38,13 @@ const data = [
     imageURL:
       "https://img.playbook.com/BrWXjLpE5ahvBkIFFWyKditidSzL61vdtu5a_4LU9mw/Z3M6Ly9wbGF5Ym9v/ay1hc3NldHMtcHVi/bGljLzZiYWRiZDY0/LTE3MWQtNGQzMS1i/ZWZjLTg4ZDczMDZm/ODQ0ZA",
     name: "Sabin Dhakal",
-    role: "Back-end Developer",
+    role: "Designer",
   },
   {
     imageURL:
       "https://img.playbook.com/rXUQcLMu6xDfxu8uSuQMGaxh--pfwyBLmFg_Oykeg48/Z3M6Ly9wbGF5Ym9v/ay1hc3NldHMtcHVi/bGljLzBlYWFiZTkz/LWI1NDQtNDc2NS04/Mzc4LTFlNWVmNjg5/Y2IwYw",
     name: "Chhatra Bahadur Rana",
-    role: "Full Stack Developer",
+    role: "Backend Developer",
   },
 ];
 
