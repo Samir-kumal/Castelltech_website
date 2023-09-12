@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Track */
+::-webkit-scrollbar {
+  width: 7px; /* Set width of the scrollbar */
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background-color: #19224bc9; /* Color of the scrollbar handle */
+  border-radius: 10px; /* Rounded corners of the handle */
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background-color: #555; /* Color of the handle when hovered */
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Color of the track */
+}
+
+/* Handle on active (clicked) */
+::-webkit-scrollbar-thumb:active {
+  background-color: #2883ea; /* Color of the handle when clicked */
+}

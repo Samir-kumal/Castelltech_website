@@ -1,31 +1,16 @@
 // import React from 'react'
-import Header from "./Container/Header"
-import Main from './Container/Main'
-import Services from './Container/Services'
-import Footer from './Container/Footer'
-import Testimonials from './Container/Testimonials'
-import Team from './Container/Team'
-import Features from './Container/Features'
-import Contact from "./Container/Contact"
-import TechStack from "./Container/TechStack"
 
-const App = () => {
+import { BrowserRouter, Link, Route, Routes } from "react-router-dom";
+import Home from "./pages/Home";
+import PrivacyPolicy from "./Container/PrivacyPolicy";
+
+export default function App() {
   return (
-    <>
-      <Header/>
-      <Main/>
-      <Services/>
-      <Features/>
-      <Team/>
-      <TechStack/>
-
-      <Testimonials/>
-      {/* <ContactUS/> */}
-      <Contact/>
-
-      <Footer/>
-    </>
-  )
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home></Home>} />
+        <Route path="/privacy" element={<PrivacyPolicy />} />
+      </Routes>
+    </BrowserRouter>
+  );
 }
-
-export default App
