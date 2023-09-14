@@ -4,15 +4,32 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/png" sizes="16x16" href="./public/favicon-16x16.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+
     <title>CastellTech</title>
   </head>
-  <body>
+  <body class="relative">
+    
     <div id="root"></div>
+    
+    
     <script type="module" src="/src/main.tsx"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
     <script>
       AOS.init();
     </script>
+    
+    <script type="text/javascript">
+      (function(d, m){
+          var kommunicateSettings = 
+              {"appId":"1f515ea815366aef19eda113b55c3e5d1","popupWidget":true,"automaticChatOpenOnNavigation":true};
+          var s = document.createElement("script"); s.type = "text/javascript"; s.async = true;
+          s.src = "https://widget.kommunicate.io/v2/kommunicate.app";
+          var h = document.getElementsByTagName("head")[0]; h.appendChild(s);
+          window.kommunicate = m; m._globals = kommunicateSettings;
+      })(document, window.kommunicate || {});
+  
+  </script>
   </body>
 </html>
