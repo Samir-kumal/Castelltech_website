@@ -104,7 +104,7 @@ export default function Testimonials() {
       bg={useColorModeValue("gray.100", "gray.700")}
       id="testimonials-section"
     >
-      <Container maxW={"7xl"} py={16} as={Stack} spacing={12}>
+      <Container maxW={"6xl"} py={16} as={Stack} spacing={12}>
         <Stack spacing={0} align={"center"}>
           <Heading>Our Clients Speak</Heading>
           <Text>We have been working with clients around Nepal</Text>
@@ -148,7 +148,7 @@ export default function Testimonials() {
                 "https://img.playbook.com/G3KImmXd2bpeFQtsCdrLZdIEDyQqRp0J-SMNsLSlW6I/Z3M6Ly9wbGF5Ym9v/ay1hc3NldHMtcHVi/bGljLzc5ZmZiN2Nj/LTMwOTctNDk2Mi04/OTBmLTJhYTUxYmUw/OTMzMg"
               }
               name={"Kishor Aryal"}
-              title={"Chairman at Name Instittute hetauda"}
+              title={"Chairman at Name Institute hetauda"}
             />
           </Testimonial>
           <Testimonial>

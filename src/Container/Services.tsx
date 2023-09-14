@@ -12,7 +12,7 @@ export default function Services() {
   return (
     <div id="services-section">
       <Box p={4} py={16} id="services-section">
-        <Stack spacing={6} as={Container} maxW={"5xl"} textAlign={"center"}>
+        <Stack spacing={5} as={Container} maxW={"5xl"} textAlign={"center"}>
           <Heading
             fontSize={{ base: "2xl", sm: "4xl", lg: "2xl" }}
             color={"#137DC5"}
@@ -33,7 +33,7 @@ export default function Services() {
           </Text>
         </Stack>
 
-        <Container maxW={"7xl"} mt={12}>
+        <Container maxW={"6xl"} mt={12}>
           <ServicesCard />
         </Container>
       </Box>

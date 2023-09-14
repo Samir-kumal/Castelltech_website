@@ -71,7 +71,7 @@ export default function Footer() {
           spacing={8}
         >
           <Stack spacing={6}>
-            <Box>
+            <Box as="a" href="/">
               <LOGO />
             </Box>
             <Text fontSize={"sm"}>
@@ -84,9 +84,7 @@ export default function Footer() {
               About us
             </Box>
 
-            <Box as="a" href={"#"}>
-              Testimonials
-            </Box>
+           
 
             <Link to={"privacy"}>Privacy Policy</Link>
           </Stack>

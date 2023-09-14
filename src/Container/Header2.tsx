@@ -91,7 +91,7 @@ export default function Header() {
         <Flex h={16} alignItems={"center"} justifyContent={"space-between"}>
           <HStack spacing={8} alignItems={"center"} pl={{ base: 0, md: 20 }}>
             <Box>
-              <NavLink onClick={() => handleClick("Home")} url="#home">
+              <NavLink onClick={() => handleClick("Home")} url="/#home">
                 <LOGO />
               </NavLink>
             </Box>
@@ -106,13 +106,9 @@ export default function Header() {
               pr={{ base: 0, md: 20 }}
             >
               {Links.map((link) => (
-                <NavLink
-                  key={link.text}
-                  url={link.url}
-                  onClick={() => handleClick(link.text)}
-                >
-                  {link.text}
-                </NavLink>
+               
+                 <a href="/">{link.text}</a>
+               
               ))}
               <a href="#contact">
                 <Button
@@ -126,7 +122,7 @@ export default function Header() {
                     </HStack>
                     <NavLink
                     onClick={() => handleClick("Contact")}
-                    url={"#contact"}
+                    url={"/#contact"}
                   >
                     Quick Enquiry
                   </NavLink>
@@ -148,13 +144,9 @@ export default function Header() {
           <Box pb={4} display={{ md: "none" }}>
             <Stack as={"nav"} spacing={4}>
               {Links.map((link) => (
-                <NavLink
-                  key={link.url}
-                  url={link.url}
-                  onClick={() => handleClick(link.text)}
-                >
-                  {link.text}
-                </NavLink>
+                
+                  <p>{link.text}</p>
+                
               ))}
             </Stack>
           </Box>

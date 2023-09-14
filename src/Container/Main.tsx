@@ -17,7 +17,8 @@ import { CONFETTI_DARK, CONFETTI_LIGHT } from "../lib/Theme";
 export default function Main() {
   return (
     <Container
-      height={"2xl"}
+      height={{ base:"3xl", md: "md",lg:"2xl"}}
+      // marginBottom={{base:"2", lg:"0"}}
       maxW={"7xl"}
       marginTop={"1"}
       id="home-section"
@@ -30,9 +31,13 @@ export default function Main() {
         align={"center"}
         spacing={{ base: 8, md: 10 }}
         py={{ base: 20, md: 28 }}
-        direction={{ base: "column", md: "row" }}
+        direction={{ base: "column-reverse", md: "row" }}
       >
-        <Stack flex={1} spacing={{ base: 5, md: 10 }}>
+        <Stack flex={1} spacing={{ base: 5, md: 10 }} 
+        transform={{base:"translate(0px, -50px)", lg:"translate(0px, 0px)"}}
+        >
+        
+
           <Heading
             lineHeight={1.1}
             fontWeight={600}
@@ -61,7 +66,8 @@ export default function Main() {
           <NavLink onClick={() => handleClick("Contact")} url={"#contact"}>
             <Button
               colorScheme={"blue"}
-              width={"60"}
+              width={{base:"full",lg:"60"}}
+              // paddingY={{base:"2xl"}}
               borderRadius={"2xl"}
               _hover={{ bgGradient: hoverGradient }}
               bgGradient={gradient}
@@ -81,16 +87,20 @@ export default function Main() {
           align={"center"}
           position={"relative"}
           w={"full"}
+        
         >
           <Box
-            transform={""}
-            position={"relative"}
-            height={"full"}
-            width={"full"}
-            overflow={"hidden"}
+            transform={{base:"translate(0px, -50px)", lg:"translate(0px, -120px)"}}
+            // position={"relative"}  
+            // height={{base:"sm"}}
+           
+            display={"flex"}
+            justifyContent={"center"}
+
           >
             <LottiePlayer
-              style={"player h-120 -translate-y-28"}
+
+              // style={"player h-120  lg:-translate-y-28"}   
               url="https://lottie.host/7c67be8f-4a27-4765-84c1-ff113e11c960/HmYOpShR9z.json"
             />
           </Box>
