@@ -18,8 +18,8 @@ import {
 } from "@chakra-ui/react";
 import { handleClick, NavLink } from "./Header";
 import { FaArrowRight } from "react-icons/fa";
-const gradient = "linear(to-r, blue.700, teal.500)";
-const hoverGradient = "linear(to-l, blue.700, teal.500)";
+const gradient = "linear(to-r, blue.800, blue.500)";
+const hoverGradient = "linear(to-l, blue.800, blue.500)";
 
 export default function Main() {
   return (
