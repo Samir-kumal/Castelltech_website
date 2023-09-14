@@ -18,7 +18,7 @@ export default function Main() {
   return (
     <Container
       height={{ base:"8xl",lg:"2xl"}}
-      marginBottom={{base:"2", lg:"0"}}
+      // marginBottom={{base:"2", lg:"0"}}
       maxW={"7xl"}
       marginTop={"1"}
       id="home-section"
