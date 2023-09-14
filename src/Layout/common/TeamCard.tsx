@@ -13,7 +13,7 @@ const data = [
   {
     imageURL:
       "https://img.playbook.com/ACnOcagsZBm-or8ty4Wkd59eyn3ghvusTyoRKgycL5g/Z3M6Ly9wbGF5Ym9v/ay1hc3NldHMtcHVi/bGljLzY0OWM2YzIx/LTBkODktNDg3Yi05/MDI5LTgzMmZlMGM5/MmZlZQ",
-    name: "Bishal Pokharel",
+    name: "Dr.Bishal Pokharel",
     role: "Founder / Chairman",
   },
   {

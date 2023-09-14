@@ -18,7 +18,7 @@ export default function Main() {
   return (
     <Container
       height={"2xl"}
-      maxH={"4xl"}
+      maxH={"7xl"}
       maxW={"7xl"}
       marginTop={"1"}
       id="home-section"
@@ -33,7 +33,11 @@ export default function Main() {
         py={{ base: 20, md: 28 }}
         direction={{ base: "column-reverse", md: "row" }}
       >
-        <Stack flex={1} spacing={{ base: 5, md: 10 }}>
+        <Stack flex={1} spacing={{ base: 5, md: 10 }} 
+        transform={{base:"translate(0px, -50px)", lg:"translate(0px, 0px)"}}
+        >
+        
+
           <Heading
             lineHeight={1.1}
             fontWeight={600}
@@ -82,18 +86,20 @@ export default function Main() {
           align={"center"}
           position={"relative"}
           w={"full"}
+        
         >
           <Box
+            transform={{base:"translate(0px, -50px)", lg:"translate(0px, -120px)"}}
             // position={"relative"}  
             // height={{base:"sm"}}
-            translateY={""}
+           
             display={"flex"}
             justifyContent={"center"}
 
           >
             <LottiePlayer
 
-              style={"player h-120  lg:-translate-y-28"} 
+              // style={"player h-120  lg:-translate-y-28"}   
               url="https://lottie.host/7c67be8f-4a27-4765-84c1-ff113e11c960/HmYOpShR9z.json"
             />
           </Box>
