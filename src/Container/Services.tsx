@@ -1,22 +1,11 @@
 import {
   Box,
-  // Button,
   Container,
-  // Flex,
   Heading,
-  // Icon,
   Stack,
   Text,
-  // useColorModeValue,
 } from "@chakra-ui/react";
-// import { ReactElement } from 'react'
-// import {
-//   FcAbout,
-//   FcAssistant,
-//   FcCollaboration,
-//   FcDonate,
-//   FcManager,
-// } from "react-icons/fc";
+
 import ServicesCard from "../Layout/common/ServicesCard";
 
 export default function Services() {

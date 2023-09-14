@@ -24,9 +24,8 @@ import { FiMail } from "react-icons/fi";
 const Links = [
   { text: "Home", url: "#home" },
   { text: "Services", url: "#services" },
-  { text: "Blog", url: "#blog" },
-  { text: "Testimonials", url: "#testimonials" },
   { text: "Teams", url: "#teams" },
+  { text: "Contact", url: "#contact" },
 ];
 export const handleClick = (anchor: string) => {
   // e.preventDefault();
@@ -115,20 +114,21 @@ export default function Header() {
                   {link.text}
                 </NavLink>
               ))}
-              <Button colorScheme="blue" variant="outline" borderRadius={"3xl"}>
-                <Flex align="center">
-                  <a href="#contact-section"></a>
-                  <HStack spacing={5} align="center" justify="center">
-                    <Icon as={FiMail} boxSize={4} ml={2} />
-                  </HStack>
-                  <NavLink
-                    onClick={() => handleClick("Contact")}
-                    url={"#contact"}
-                  >
-                    Get in Touch
-                  </NavLink>
-                </Flex>
-              </Button>
+              <a href="#contact">
+                <Button
+                  colorScheme="blue"
+                  variant="outline"
+                  borderRadius={"3xl"}
+                >
+                  <Flex align="center" gap={"2"}>
+                    <HStack spacing={5} align="center" justify="center">
+                      <Icon as={FiMail} boxSize={4} ml={2} />
+                    </HStack>
+
+                    <p>Quick Chat</p>
+                  </Flex>
+                </Button>
+              </a>
             </HStack>
             <IconButton
               size={"md"}
