@@ -67,6 +67,7 @@ export default function Main() {
             <Button
               colorScheme={"blue"}
               width={{base:"full",lg:"60"}}
+              // paddingY={{base:"2xl"}}
               borderRadius={"2xl"}
               _hover={{ bgGradient: hoverGradient }}
               bgGradient={gradient}
