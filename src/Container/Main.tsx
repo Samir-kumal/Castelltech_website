@@ -66,7 +66,7 @@ export default function Main() {
           <NavLink onClick={() => handleClick("Contact")} url={"#contact"}>
             <Button
               colorScheme={"blue"}
-              width={"60"}
+              width={{base:"full",lg:"60"}}
               borderRadius={"2xl"}
               _hover={{ bgGradient: hoverGradient }}
               bgGradient={gradient}
