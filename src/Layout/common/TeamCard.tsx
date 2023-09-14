@@ -43,13 +43,13 @@ const data = [
   {
     imageURL:
       "https://img.playbook.com/rXUQcLMu6xDfxu8uSuQMGaxh--pfwyBLmFg_Oykeg48/Z3M6Ly9wbGF5Ym9v/ay1hc3NldHMtcHVi/bGljLzBlYWFiZTkz/LWI1NDQtNDc2NS04/Mzc4LTFlNWVmNjg5/Y2IwYw",
-    name: "Chhatra Bahadur Rana",
-    role: "Backend Developer",
+    name: "Chhatra B. Rana",
+    role: "Fullstack Developer",
   },
 ];
 
 function TeamCard() {
-  const columnNo: number =3;
+  const columnNo: number = 3;
   return (
     <CardGridLayout column={columnNo}>
       {data.map((data) => (
@@ -57,36 +57,43 @@ function TeamCard() {
           key={data.imageURL}
           bg={useColorModeValue("white", "gray.800")}
           // maxW="sm"
-          width={"-webkit-fit-content"}
+          width={"10rem"}
           borderWidth="1px"
           rounded="lg"
-          shadow="lg"
-          position="relative"
           display={"flex"}
           flexDirection={"column"}
-          alignContent={"center"}
-          justifyContent={"center"}
-
-          // height={"40"}
         >
           <Image
             src={data.imageURL}
             alt={`Picture of ${data.name}`}
             roundedTop="lg"
-            height={"52"}
-            objectFit={"contain"}
+            height={"40"}
+            objectFit={"cover"}
           />
 
-          <Box p="2">
-            <Flex mt="1" justifyContent="space-between" flexDirection={"column"} alignContent="center">
-
-                  <Heading fontSize="lg" textAlign={"center"}   fontWeight="bold">
-                    {data.name}
-                  </Heading>
-                  <Heading color={"gray.500"} fontSize="sm" textAlign={"center"} fontWeight="normal">
-                    {data.role}
-                  </Heading>
-
+          <Box>
+            <Flex
+              justifyContent="space-between"
+              flexDirection={"column"}
+              alignContent="center"
+            >
+              <Heading
+                fontSize="lg"
+                textAlign={"center"}
+                fontWeight="normal"
+                padding={1}
+              >
+                {data.name}
+              </Heading>
+              <Heading
+                padding={1}
+                color={"gray.500"}
+                fontSize="small"
+                textAlign={"center"}
+                fontWeight="normal"
+              >
+                {data.role}
+              </Heading>
             </Flex>
           </Box>
         </Box>

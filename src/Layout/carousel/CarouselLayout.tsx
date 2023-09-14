@@ -9,7 +9,7 @@ import {
   Text,
   Flex,
   Tag,
-  Image
+  Image,
 } from "@chakra-ui/react";
 const data = [
   {
@@ -59,14 +59,10 @@ const data = [
   },
 ];
 const CarouselLayout = () => {
-
- 
-
- 
   return (
     <div>
       <Container
-        py={8}
+        py={3}
         px={0}
         maxW={{
           base: "100%",
@@ -81,7 +77,6 @@ const CarouselLayout = () => {
           {data.map((item) => (
             <Flex
               key={item.imageURL}
-              boxShadow="rgba(0, 0, 0, 0.1) 0px 1px 6px, rgba(0, 0, 0, 0.1) 0px 1px 6px"
               justifyContent="space-between"
               flexDirection="column"
               overflow="hidden"
@@ -92,16 +87,22 @@ const CarouselLayout = () => {
               flex={1}
               p={5}
             >
-              <VStack  display={"flex"} alignContent={"center"} justifyContent={"center"}>
-               
+              <VStack
+                display={"flex"}
+                alignContent={"center"}
+                justifyContent={"center"}
+              >
                 {/* <Text w="full">{post.body}</Text> */}
-                <Image src = {item.imageURL} alt= {item.name} height={"16"} objectFit={"contain"} draggable = {"false"}/>
+                <Image
+                  src={item.imageURL}
+                  alt={item.name}
+                  height={"16"}
+                  objectFit={"contain"}
+                  draggable={"false"}
+                />
               </VStack>
 
-              <Flex justifyContent="space-between">
-             
-  
-              </Flex>
+              <Flex justifyContent="space-between"></Flex>
             </Flex>
           ))}
         </ChakraCarousel>

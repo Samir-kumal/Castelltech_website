@@ -20,11 +20,11 @@ import {
 import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
 import LOGO from "../assets/ICONS/LOGO";
 import { FaArrowRight } from "react-icons/fa";
-import { FiMail } from 'react-icons/fi';
+import { FiMail } from "react-icons/fi";
 const Links = [
   { text: "Home", url: "#home" },
   { text: "Services", url: "#services" },
-  { text: "Pricing", url: "#pricing" },
+  { text: "Blog", url: "#blog" },
   { text: "Testimonials", url: "#testimonials" },
   { text: "Teams", url: "#teams" },
 ];
@@ -84,12 +84,13 @@ export default function Header() {
         bg={useColorModeValue("white", "gray.900")}
         px={4}
         position={"fixed"}
+        top={0}
         width={"full"}
         zIndex={"1"}
         // shadow={"base"}
       >
         <Flex h={16} alignItems={"center"} justifyContent={"space-between"}>
-          <HStack spacing={8} alignItems={"center"} pl={{ base: 0, md: 6 }}>
+          <HStack spacing={8} alignItems={"center"} pl={{ base: 0, md: 20 }}>
             <Box>
               <NavLink onClick={() => handleClick("Home")} url="#home">
                 <LOGO />
@@ -99,36 +100,33 @@ export default function Header() {
 
           <Flex alignItems={"center"}>
             <HStack
-            fontWeight={"semibold"}
+              fontSize={"1rem"}
               as={"nav"}
-              spacing={8}
+              spacing={6}
               display={{ base: "none", md: "flex" }}
-              pr={{ base: 0, md: 16 }}
+              pr={{ base: 0, md: 20 }}
             >
               {Links.map((link) => (
                 <NavLink
                   key={link.text}
                   url={link.url}
-                  
                   onClick={() => handleClick(link.text)}
                 >
                   {link.text}
                 </NavLink>
               ))}
-              <Button colorScheme="blue" variant='outline' borderRadius={"3xl"}  >
+              <Button colorScheme="blue" variant="outline" borderRadius={"3xl"}>
                 <Flex align="center">
                   <a href="#contact-section"></a>
-                  <HStack spacing={6} align="center">
+                  <HStack spacing={5} align="center" justify="center">
                     <Icon as={FiMail} boxSize={4} ml={2} />
                   </HStack>
                   <NavLink
                     onClick={() => handleClick("Contact")}
                     url={"#contact"}
                   >
-                    Contact Us
+                    Get in Touch
                   </NavLink>
-
-                  
                 </Flex>
               </Button>
             </HStack>
@@ -146,7 +144,11 @@ export default function Header() {
           <Box pb={4} display={{ md: "none" }}>
             <Stack as={"nav"} spacing={4}>
               {Links.map((link) => (
-                <NavLink key={link.url} url={link.url} onClick={() => handleClick(link.text)}>
+                <NavLink
+                  key={link.url}
+                  url={link.url}
+                  onClick={() => handleClick(link.text)}
+                >
                   {link.text}
                 </NavLink>
               ))}
