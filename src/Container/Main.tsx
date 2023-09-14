@@ -17,7 +17,7 @@ import { CONFETTI_DARK, CONFETTI_LIGHT } from "../lib/Theme";
 export default function Main() {
   return (
     <Container
-      height={{ base:"3xl",lg:"2xl"}}
+      height={{ base:"3xl", md: "md",lg:"2xl"}}
       // marginBottom={{base:"2", lg:"0"}}
       maxW={"7xl"}
       marginTop={"1"}
