@@ -63,6 +63,7 @@ export default function Footer() {
     <Box
       bg={useColorModeValue("gray.50", "gray.900")}
       color={useColorModeValue("gray.700", "gray.200")}
+      width={"full"}
     >
       <Container as={Stack} maxW={"7xl"} py={10}>
         <SimpleGrid
@@ -70,56 +71,39 @@ export default function Footer() {
           spacing={8}
         >
           <Stack spacing={6}>
-            <Box>
+            <Box as="a" href="/">
               <LOGO />
             </Box>
             <Text fontSize={"sm"}>
               © 2023 Castelltech Pvt Ltd. All rights reserved
             </Text>
-            <Stack direction={"row"} spacing={6}>
-              <SocialButton
-                label={"Instagram"}
-                href={"https://www.instagram.com"}
-              >
-                <FaInstagram />
-              </SocialButton>
-              <SocialButton
-                label={"Instagram"}
-                href={"https://www.facebook.com"}
-              >
-                <FaFacebook />
-              </SocialButton>
-            </Stack>
           </Stack>
           <Stack align={"flex-start"}>
-            <ListHeader>Company</ListHeader>
+            <ListHeader>Quick Links</ListHeader>
             <Box as="a" href={"#"}>
               About us
             </Box>
+
+           
+
+            <Link to={"privacy"}>Privacy Policy</Link>
+          </Stack>
+
+          <Stack align={"flex-start"}>
+            <ListHeader>Contact us</ListHeader>
             <Box as="a" href={"#"}>
-              Blog
+              Sinamangal, Kathmandu
+            </Box>
+            <Box as="a" href={"#"}>
+              +977 9828225659
             </Box>
             <Box as="a" href={"#contact"}>
-              Contact us
+              +977 9845829770
             </Box>
 
             <Box as="a" href={"#"}>
-              Testimonials
+              info@castelltech.com
             </Box>
-          </Stack>
-          <Stack align={"flex-start"}>
-            <ListHeader>Support</ListHeader>
-            <Box as="a" href={"#"}>
-              Help Center
-            </Box>
-            <Box as="a" href={"#"}>
-              Terms of Service
-            </Box>
-            <Box as="a" href={"#"}>
-              Legal
-            </Box>
-            <Link to={"privacy"}>Privacy Policy</Link>
-           
           </Stack>
           <Stack align={"flex-start"}>
             <ListHeader>Stay up to date</ListHeader>
@@ -141,6 +125,20 @@ export default function Footer() {
                 aria-label="Subscribe"
                 icon={<BiMailSend />}
               />
+            </Stack>
+            <Stack direction={"row"} spacing={6}>
+              <SocialButton
+                label={"Instagram"}
+                href={"https://www.instagram.com"}
+              >
+                <FaInstagram />
+              </SocialButton>
+              <SocialButton
+                label={"Instagram"}
+                href={"https://www.facebook.com"}
+              >
+                <FaFacebook />
+              </SocialButton>
             </Stack>
           </Stack>
         </SimpleGrid>

@@ -9,13 +9,8 @@ import {
   Image,
   Heading,
 } from "@chakra-ui/react";
-// import { FcAssistant, FcDonate, FcInTransit } from 'react-icons/fc'
-import Icon1 from "../assets/png/Icon1.svg";
-import Icon2 from "../assets/png/Icon2.svg";
-import Icon3 from "../assets/png/Icon3.svg";
-import Icon4 from "../assets/png/Icon4.svg";
 
-
+import LottiePlayer from "./LottiePlayer";
 
 export default function GridBox() {
   return (
@@ -27,10 +22,13 @@ export default function GridBox() {
           justifyContent="center"
           alignItems="center"
         >
-          <Image src={Icon1} alt="Market Analysis" height="80px" />
+          <LottiePlayer
+            url="https://lottie.host/c8c5c662-da65-4b19-a22e-8f2088552156/IgbVi8dcq8.json"
+            style="h-[80px]"
+          />
           <br />
           <Heading
-              color={"#1A202C"}
+            color={"#1A202C"}
             fontWeight={"bold"}
             fontSize={{ base: "xl", sm: "lg", lg: "xl" }}
           >
@@ -39,7 +37,9 @@ export default function GridBox() {
           <br />
 
           <Text textAlign="center" color={"gray.600"}>
-          Unlock the power of digital marketing with our engaging infographics, helping you boost online visibility, reach your ideal audience, and grow your brand.
+            Unlock the power of digital marketing with our engaging
+            infographics, helping you boost online visibility, reach your ideal
+            audience, and grow your brand.
           </Text>
         </Box>
         <Box
@@ -48,11 +48,14 @@ export default function GridBox() {
           justifyContent="center"
           alignItems="center"
         >
-          <Image src={Icon2} alt="Lead Generation" height="80px" />
+          <LottiePlayer
+            url="    https://lottie.host/b83a29a4-57b9-4ad1-8190-e3b96031a44c/R2igONMCUE.json "
+            style="h-[80px]"
+          />
           <br />
 
           <Heading
-              color={"#1A202C"}
+            color={"#1A202C"}
             fontWeight={"bold"}
             fontSize={{ base: "xl", sm: "lg", lg: "xl" }}
           >
@@ -61,7 +64,9 @@ export default function GridBox() {
           <br />
 
           <Text textAlign="center" color={"gray.600"}>
-          Our visually appealing content simplifies the complexities of Onsite SEO, empowering you to enhance your website's visibility and attract more visitors.
+            Our visually appealing content simplifies the complexities of Onsite
+            SEO, empowering you to enhance your website's visibility and attract
+            more visitors.
           </Text>
         </Box>
         <Box
@@ -70,7 +75,11 @@ export default function GridBox() {
           justifyContent="center"
           alignItems="center"
         >
-          <Image src={Icon3} alt="Social Media Marketing" height="80px" />
+          <LottiePlayer
+            url="          https://lottie.host/f6b2c58f-1f16-4a58-a343-22fa52f110d5/g0DT12sHJj.json
+            "
+            style="h-[80px]"
+          />
           <br />
 
           <Heading
@@ -85,7 +94,8 @@ export default function GridBox() {
           <br />
 
           <Text textAlign="center" color={"gray.600"}>
-          Our visually stunning content showcases the power of design in various aspects of life, from branding to user experience. 
+            Our visually stunning content showcases the power of design in
+            various aspects of life, from branding to user experience.
           </Text>
         </Box>
         <Box
@@ -94,7 +104,12 @@ export default function GridBox() {
           justifyContent="center"
           alignItems="center"
         >
-          <Image src={Icon4} alt="Social Media Marketing" height="80px" />
+          <LottiePlayer
+            url="          https://lottie.host/956e8e61-59ea-484c-9b67-28339c4f2758/oG2TXcuYzU.json
+            "
+            style="h-[80px]"
+          />
+
           <br />
 
           <Heading
@@ -109,7 +124,8 @@ export default function GridBox() {
           <br />
 
           <Text textAlign="center" color={"gray.600"}>
-          Learn to harness social platforms' potential for audience connection, brand loyalty, and engagement. 
+            Learn to harness social platforms' potential for audience
+            connection, brand loyalty, and engagement.
           </Text>
         </Box>
       </SimpleGrid>

@@ -5,7 +5,7 @@ import Footer from "../Container/Footer";
 const PrivacyPolicy = () => {
   return (
     <>
-      <Header />
+      
       <div>PrivacyPolicy</div>
       <Footer />
     </>
